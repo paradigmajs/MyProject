@@ -14,7 +14,7 @@ function App() {
     let date = new Date
     let hour = date.getHours()
     console.log(hour)
-    if(hour < 7 || hour > 19){
+    if(hour < 7 || hour > 18){
       setBackground(night)
       setColorFrom('#001584')
       setColorTo('#08668D')

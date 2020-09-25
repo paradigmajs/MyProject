@@ -48,3 +48,182 @@
     
     color: #FFFFFF;
 }
+.loginAuth h3{
+    position: absolute;
+    width: 233px;
+    height: 45px;
+    left: 5%;
+    top: 2%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 45px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #9C9C9C;
+
+    text-shadow: 8px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.loginAuth .pass{
+    left: 0;
+    top: 30%;
+}
+.loginAuth button{
+    position: absolute;
+    width: 125px;
+    height: 35px;
+    left: 12%;
+    top: 65%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 37px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #FFFFFF;
+
+    text-shadow: 8px 0px 10px rgba(0, 0, 0, 0.3);
+    
+    background: #010E6B;
+}
+.loginAuth p{
+    position: absolute;
+    width: 285px;
+    height: 38px;
+    left: 12%;
+    top: 70%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 37px;
+    /* identical to box height */
+    cursor: pointer;
+    text-decoration-line: underline;
+
+    color: #9C9C9C;
+}
+
+.dontHaveAcc img{
+    position: absolute;
+    left: 12%;
+    top: 87%;
+}
+.dontHaveAcc h3{
+    position: absolute;
+    width: 328px;
+    height: 36px;
+    left: 12%;
+    top: 81%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+
+    text-shadow: 8px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.dontHaveAcc p{
+    position: absolute;
+    width: 208px;
+    height: 27px;
+    left: 26%;
+    top: 89.5%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height */
+    cursor: pointer;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+
+    text-shadow: 8px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.form__group1{
+    position: absolute;
+    top:18%;
+    width: 70%;
+    left: 11.5%;
+  }
+.form__group2 {
+    position: absolute;
+    top:48%;
+    width: 70%;
+    left: 12.5%;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.1rem;
+    color: #9b9b9b;
+    padding: 20px 0;
+    padding-left: 1%;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  .form__field::placeholder {
+    color: transparent;
+  }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.2rem;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 27%;
+    display: block;
+    transition: 0.2s;
+    font-size: 0rem;
+    color: #9b9b9b;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 9px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #9b9b9b, #9b9b9b);
+    border-image-slice: 1;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+    font-weight: 500;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+  
+ 
+  
