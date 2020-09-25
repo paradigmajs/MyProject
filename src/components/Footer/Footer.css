@@ -2,6 +2,7 @@
     position: absolute;
     top:93%;
     left: 87%;
+    z-index: 9;
 }
 .footer img{
     width: 50px;

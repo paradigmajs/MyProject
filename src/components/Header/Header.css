@@ -3,6 +3,8 @@
     height: 60px;
     background-color: white;
     opacity: .3;
+    position: absolute;
+    top: 0;
     border-radius: 0px 0px 50px 50px;
 }
 .headerContent{
@@ -20,25 +22,31 @@
     height: 20px;
     margin-top: 28%;
     cursor: pointer;
-    z-index: 111;
+    z-index: 12;
     position: relative;
 }
-
+.headerContent .logo{
+    z-index: 9;
+}
 .headerContent .logo img{
     width: 150px;
     height: 40px;
+    margin-left: 23%;
     cursor: pointer;
+   
+    
 }
 
 .login-trash{
     display: flex;
     justify-content: space-between;
     width: 8%;
-
+    z-index: 9;
 }
 .login-trash img{
     width: 45px;
     cursor: pointer;
     height: 45px;
     margin-top: 15%;
+    
 }

@@ -2,9 +2,49 @@
     width: 25%;
     height: 100vh;
     position: absolute;
-    z-index: 9;
+    z-index: 11;
     top: 0;
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.3);
-    
+    color: white;
     border-radius: 0px 50px 50px 0px;
+}
+.menu h2{
+    position: absolute;
+    left: 30%;
+    top: 8.35%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 75px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+
+    text-shadow: 8px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.menu ul{
+    position: absolute;
+    left: -12%;
+
+    top: 25%;
+    bottom: 75.96%;
+    width: 100%;
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 60px;
+    /* identical to box height */
+    list-style-type: none;
+    text-decoration-line: underline;
+
+
+    text-shadow: 8px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.menu li{
+    cursor: pointer;
 }

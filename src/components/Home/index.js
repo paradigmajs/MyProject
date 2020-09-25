@@ -4,16 +4,20 @@ import './Home.css'
 import Header from '../Header';
 import Footer from '../Footer';
 import Menu from '../Menu';
+import Brands from '../Brands';
 
 function Home(props){
     const [colorFrom, setColorFrom] = useState('')
     const [colorTo, setColorTo] = useState('')
     const [menuToggle, setMenuToggle] = useState(false)
     const [ml , setMl] = useState(-25)
+    const [brandsToggle, setBrandsToggle] = useState(false)
+    const [loginBg,setLoginBg] = useState('')
 
     useEffect(()=>{
         setColorTo(props.colorTo)
         setColorFrom(props.colorFrom)
+        setLoginBg(props.loginBg)
     })
     
     const togleMenu = () =>{
@@ -29,14 +33,32 @@ function Home(props){
             }
         }
     }
-    function doSetTimeout(i) {
+
+    const doSetTimeout=(i)=> {
         setTimeout(function() { setMl(i); }, 100);
     }
-    
+
+    const brands=()=>{
+        setBrandsToggle(!brandsToggle)
+    }
+    const toggles=()=>{
+        if(brandsToggle !== false ){
+            setBrandsToggle(false)
+        }
+        
+    }
+
     return(
-        <div className="background" style={{backgroundImage: "url(" +  props.bg  + ")"}}>
-            <Header togleMenu={togleMenu}/>
+        
+        <div>
+        <div className="background" style={{backgroundImage: "url(" +  props.bg  + ")"}} onClick={toggles}>
+           
+        </div>
+            <button onClick={brands}>Click me</button>
+            <Header togleMenu={togleMenu} loginBg={loginBg}/>
+            
             <Menu colorFrom={colorFrom} colorTo={colorTo} ml={ml}/>
+            <Brands colorFrom={colorFrom} colorTo={colorTo} brandsToggle={brandsToggle}/>
             <Footer/>
         </div>
     )
