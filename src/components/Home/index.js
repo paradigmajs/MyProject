@@ -5,8 +5,11 @@ import Header from '../Header';
 import Footer from '../Footer';
 import Menu from '../Menu';
 import Brands from '../Brands';
+import air from '../../images/flot.png'
 
-function Home(props){
+
+
+function    Home(props){
     const [colorFrom, setColorFrom] = useState('')
     const [colorTo, setColorTo] = useState('')
     const [menuToggle, setMenuToggle] = useState(false)
@@ -47,14 +50,18 @@ function Home(props){
         }
         
     }
+    
 
     return(
         
         <div>
         <div className="background" style={{backgroundImage: "url(" +  props.bg  + ")"}} onClick={toggles}>
-           
+        <button onClick={brands}>Click me</button>
+            <div className="AirFlot">
+                <img src={air}/>
+            </div>
         </div>
-            <button onClick={brands}>Click me</button>
+            
             <Header togleMenu={togleMenu} loginBg={loginBg}/>
             
             <Menu colorFrom={colorFrom} colorTo={colorTo} ml={ml}/>

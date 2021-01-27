@@ -5,17 +5,22 @@ import login from "../../images/login.png"
 import trash from "../../images/trash.png"
 import './Header.css'
 import Login from '../Login'
+import SignUp from '../SignUp'
 
 function Header(props) {
     const [toggleLogin, setToggleLogin] = useState(false)
+    const [toggleSignUp, setToggleSignUp] = useState(false)
     const [loginBg,setLoginBg] = useState('')
 
     const logins =()=>{
         setToggleLogin(!toggleLogin)
+        setToggleSignUp(false)
     }
     useEffect(()=>{
         setLoginBg(props.loginBg)
     })
+
+    
 
     return (
         <div>
@@ -30,14 +35,15 @@ function Header(props) {
                 </div>
                 <div className="login-trash">
                     <div className="login">
-                        <img src={login} onClick={logins} />
+                        <img src={login} onClick={logins}  />
                     </div>
                     <div className="trash">
                         <img src={trash}/>
                     </div>
                 </div>
             </div>
-            <Login toggleLogin={toggleLogin} loginBg={loginBg}/>
+            <Login toggleLogin={toggleLogin} loginBg={loginBg} setToggleSignUp={setToggleSignUp} setToggleLogin={setToggleLogin}/>
+            <SignUp toggleSignUp={toggleSignUp} loginBg={loginBg} setToggleSignUp={setToggleSignUp} setToggleLogin={setToggleLogin}/>
         </div>
     )
 }

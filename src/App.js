@@ -13,7 +13,7 @@ function App() {
   useEffect(()=>{
     let date = new Date
     let hour = date.getHours()
-    console.log(hour)
+
     if(hour < 7 || hour > 18){
       setBackground(night)
       setColorFrom('#001584')

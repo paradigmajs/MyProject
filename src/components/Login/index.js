@@ -25,10 +25,14 @@ function Login(props) {
                         <button style={{background: props.loginBg}}>Log In</button>
                         <p>Forgot you're password</p>
                     </div>
-                    <div className="dontHaveAcc" style={{background: props.loginBg}}>
+                    <div className="dontHaveAcc" style={{background: props.loginBg}} >
                         <img src={loginImg}/>
                         <h3>Don't have an account yet?</h3>
-                        <p>Sign up for an account</p>
+                        <p onClick={()=>{
+                                props.setToggleSignUp(true) 
+                                props.setToggleLogin(false)
+                            }  
+                        }>Sign up for an account</p>
                     </div>
                 </div>
             </div>
