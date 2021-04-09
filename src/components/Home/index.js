@@ -9,7 +9,7 @@ import air from '../../images/flot.png'
 
 
 
-function    Home(props){
+function  Home(props){
     const [colorFrom, setColorFrom] = useState('')
     const [colorTo, setColorTo] = useState('')
     const [menuToggle, setMenuToggle] = useState(false)
